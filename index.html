@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch a sketch</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Etch a sketch</h1>
+        <p>-Draw your world-</p>
+        <div class="flex">
+            <div class="box-2 flex">
+                <div>
+                    <h2>Pick your color</h2>
+                    <button class="colors" id="black" onclick="colorChoice('black')">Black</button>
+                    <button class="colors" id="rainbow" onclick="colorChoice('random')">Rainbow</button>
+                    <button class="colors" id="easer" onclick="colorChoice('rgb(237, 237, 237)')">Easer</button>
+                </div>
+                <div>
+                    <h2>Pick box size</h2>
+                    <button class="size" id="16">16 x 16</button>
+                    <button class="size" id="32">32 x 32</button>
+                    <button class="size" id="48">48 x 48</button>
+                </div>
+                <div>
+                    <h2>Wanna start new project?</h2>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>      
+            <div class="box-2">
+                <div class="sketch-box"></div>
+            </div> 
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
